@@ -368,6 +368,10 @@
                 <div class="sector-btn" onclick="showSector('carniceria')" id="btn-carniceria">
                     <i class="fas fa-drumstick-bite" style="color: #e74c3c;"></i>
                     <div class="name">Carnicería</div>
+		</div>
+		<div class="sector-btn" onclick="showSector('verduleria')" id="btn-verduleria">
+                    <i class="fas fa-carrot" style="color: #ff6b35;"></i>
+                    <div class="name">Verdulería</div>
                 </div>
                 <div class="sector-btn" onclick="showSector('fiambreria')" id="btn-fiambreria">
                     <i class="fas fa-cheese" style="color: #ffc107;"></i>
@@ -675,6 +679,61 @@
                         <button class="qty-btn" onclick="changeQty('costeletas-cerdo', -1)">-</button>
                         <span class="qty-display" id="qty-costeletas-cerdo">0</span>
                         <button class="qty-btn" onclick="changeQty('costeletas-cerdo', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+	    <!-- VERDULERÍA -->
+            <div id="verduleria" class="products-section">
+                <h3 class="section-title">
+                    <i class="fas fa-utensils" style="color: #ff6b35;"></i>
+                    Verdulería
+                </h3>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Zanahorias</div>
+                        <div class="product-price">$471</div>
+                        <div class="product-unit">por kg</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('zanahorias', -1)">-</button>
+                        <span class="qty-display" id="qty-zanahorias">0</span>
+                        <button class="qty-btn" onclick="changeQty('zanahorias', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Tomates redondos</div>
+                        <div class="product-price">$1.100</div>
+                        <div class="product-unit">por kg</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('tomate-redondo', -1)">-</button>
+                        <span class="qty-display" id="qty-tomates-redondos">0</span>
+                        <button class="qty-btn" onclick="changeQty('tomates-redondos', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Manzanas rojas</div>
+                        <div class="product-price">$4.782</div>
+                        <div class="product-unit">por kg</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('manzanas-rojas', -1)">-</button>
+                        <span class="qty-display" id="qty-manzanas-rojas">0</span>
+                        <button class="qty-btn" onclick="changeQty('manzanas-rojas', 1)">+</button>
+                    </div>
+		</div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Bananas</div>
+                        <div class="product-price">$10.785</div>
+                        <div class="product-unit">por kg</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('bananas', -1)">-</button>
+                        <span class="qty-display" id="qty-bananas">0</span>
+                        <button class="qty-btn" onclick="changeQty('bananas', 1)">+</button>
                     </div>
                 </div>
             </div>
