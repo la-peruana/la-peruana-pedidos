@@ -368,8 +368,8 @@
                 <div class="sector-btn" onclick="showSector('carniceria')" id="btn-carniceria">
                     <i class="fas fa-drumstick-bite" style="color: #e74c3c;"></i>
                     <div class="name">Carnicería</div>
-				</div>
-				<div class="sector-btn" onclick="showSector('verduleria')" id="btn-verduleria">
+		</div>
+		<div class="sector-btn" onclick="showSector('verduleria')" id="btn-verduleria">
                     <i class="fas fa-carrot" style="color: #ff6b35;"></i>
                     <div class="name">Verdulería</div>
                 </div>
@@ -386,10 +386,11 @@
                     <div class="name">Bebidas</div>
                 </div>
                	<div class="sector-btn" onclick="showSector('cafeteria')" id="btn-cafeteria">
-                    <i class="fas fa-coffee" style="color: #ff6b35;"></i>
+                    <i class="fa-solid fa-mug-saucer" style="color: #ff6b35;"></i>
                     <div class="name">Cafetería</div>
-				</div>
-            </div>
+		</div>
+            
+	    </div>
 
             <!-- ROTISERÍA -->
             <div id="rotiseria" class="products-section active">
@@ -1715,6 +1716,87 @@
   	        </div>
             </div>
 
+	    <!-- CAFETERÍA -->
+            <div id="cafeteria" class="products-section">
+                <h3 class="section-title">
+                    <i class="fa-solid fa-mug-saucer" style="color: #ff6b35;"></i>
+                    Cafetería
+                </h3>
+                
+		<div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + 2 medialunas marplatenses</div>
+                        <div class="product-price">$4500</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-marplatenses', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-marplatenses">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-marplatenses', 1)">+</button>
+                    </div>
+                </div>
+		<div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + 2 medialunas saladas</div>
+                        <div class="product-price">$3964</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-medialunas', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-medialunas">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-medialunas', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + 2 alfajores de maicena</div>
+                        <div class="product-price">$4473</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-alfamaicena', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-alfamaicena">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-alfamaicena', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + Croissant</div>
+                        <div class="product-price">$4473</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-croissant', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-croissant">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-croissant', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + 2 facturas</div>
+                        <div class="product-price">$4500</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-facturas', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-facturas">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-facturas', 1)">+</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Café con leche grande + 2 alfajores de chocolate</div>
+                        <div class="product-price">$4473</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-alfachoc', -1)">-</button>
+                        <span class="qty-display" id="qty-Café-leche-grande-alfachoc">0</span>
+                        <button class="qty-btn" onclick="changeQty('Café-leche-grande-alfachoc', 1)">+</button>
+		    </div>
+		</div>
+	    </div>
+
         </div> <!-- fin de main-content -->
 
     </div> <!-- fin de container -->
@@ -1949,8 +2031,17 @@
             'vino-hormiga': { name: 'Vino Hormiga Negra', price: 3394, unit: 'botella' },
             'cerveza-corona': { name: 'Cerveza Corona 330CC', price: 3230, unit: 'botella' },
             'lata-quilmes': { name: 'Cerveza en lata Quilmes 473cc', price: 1258, unit: 'lata' },
-            'lata-budweiser': { name: 'Cerveza en lata Budweiser 473cc', price: 1545, unit: 'lata' }
-        };
+            'lata-budweiser': { name: 'Cerveza en lata Budweiser 473cc', price: 1545, unit: 'lata' },
+ 
+	    // CAFETERÍA
+            'Café-leche-grande-marplatenses': { name: 'Café con leche grande + 2 medialunas marplatenses', price: 4500, unit: 'Combo' },
+            'Café-leche-grande-medialunas': { name: 'Café con leche grande + 2 medialunas saladas', price: 3964, unit: 'Combo' },
+            'Café-leche-grande-alfamaicena': { name: 'Café con leche grande + 2 alfajores de maicena', price: 4473, unit: 'Combo' },
+            'Café-leche-grande-croissant': { name: 'Café con leche grande + Croissant', price: 4473, unit: 'Combo' },
+            'Café-leche-grande-facturas': { name: 'Café con leche grande + 2 facturas', price: 4500, unit: 'Combo' },
+            'Café-leche-grande-alfachoc': { name: 'Café con leche grande + 2 alfajores de chocolate', price: 4473, unit: 'Combo' },
+            
+         };
 
         // Mostrar sector
         function showSector(sectorId) {
@@ -2192,7 +2283,6 @@ function sendWhatsAppOrder() {
 </body>
 
 </html>
-
 
 
 
