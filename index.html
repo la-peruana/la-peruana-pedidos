@@ -1747,7 +1747,31 @@
                         <button class="qty-btn" onclick="changeQty('Café-leche-grande-medialunas', 1)">+</button>
                     </div>
                 </div>
-                <div class="product-item">
+               <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">2 Cafés con leche grandes + 4 medialunas saladas</div>
+                        <div class="product-price">$4990</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('2Cafés-leche-grandes-4medialunas', -1)">-</button>
+                        <span class="qty-display" id="qty-2Cafés-leche-grandes-4medialunas">0</span>
+                        <button class="qty-btn" onclick="changeQty('2Cafés-leche-grandes-4medialunas', 1)">+</button>
+                    </div>
+                </div>
+				<div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">2 Cafés con leche grandes + 4 medialunas dulces</div>
+                        <div class="product-price">$4990</div>
+                        <div class="product-unit">Combo</div>
+                    </div>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="changeQty('2Cafés-leche-grandes-4medialunas-dulces', -1)">-</button>
+                        <span class="qty-display" id="qty-2Cafés-leche-grandes-4medialunas-dulces">0</span>
+                        <button class="qty-btn" onclick="changeQty('2Cafés-leche-grandes-4medialunas-dulces', 1)">+</button>
+                    </div>
+                </div>
+				<div class="product-item">
                     <div class="product-info">
                         <div class="product-name">Café con leche grande + 2 alfajores de maicena</div>
                         <div class="product-price">$4473</div>
@@ -2036,7 +2060,9 @@
 	    // CAFETERÍA
             'Café-leche-grande-marplatenses': { name: 'Café con leche grande + 2 medialunas marplatenses', price: 4500, unit: 'Combo' },
             'Café-leche-grande-medialunas': { name: 'Café con leche grande + 2 medialunas saladas', price: 3964, unit: 'Combo' },
-            'Café-leche-grande-alfamaicena': { name: 'Café con leche grande + 2 alfajores de maicena', price: 4473, unit: 'Combo' },
+            '2Cafés-leche-grande-medialunas': { name: '2 Cafés con leche grandes + 4 medialunas saladas', price: 4990, unit: 'Combo' },
+			'2Cafés-leche-grande-medialunas-dulces': { name: '2 Cafés con leche grandes + 4 medialunas dulces', price: 4990, unit: 'Combo' },
+			'Café-leche-grande-alfamaicena': { name: 'Café con leche grande + 2 alfajores de maicena', price: 4473, unit: 'Combo' },
             'Café-leche-grande-croissant': { name: 'Café con leche grande + Croissant', price: 4473, unit: 'Combo' },
             'Café-leche-grande-facturas': { name: 'Café con leche grande + 2 facturas', price: 4500, unit: 'Combo' },
             'Café-leche-grande-alfachoc': { name: 'Café con leche grande + 2 alfajores de chocolate', price: 4473, unit: 'Combo' },
@@ -2283,6 +2309,7 @@ function sendWhatsAppOrder() {
 </body>
 
 </html>
+
 
 
 
